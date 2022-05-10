@@ -18,7 +18,7 @@ app.use("/user", userRouter);
 app.get('/',(req,res) =>{
   res.send('Running');
 })
-const CONNECTION_URL = 'mongodb+srv://root:nV8pkKxlhRs4BvhP@create.hcmlr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+const CONNECTION_URL = 'YOUR MONGODB URL';
 const PORT = process.env.PORT|| 5000;
 
 mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
